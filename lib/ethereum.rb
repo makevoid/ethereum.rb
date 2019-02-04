@@ -1,5 +1,5 @@
 require "ethereum/version"
-if ENV["NO_ACTIVESUPPORT"] == "1"
+unless ENV["NO_ACTIVESUPPORT"] == "1"
   require 'active_support'
   require 'active_support/core_ext'
 end
