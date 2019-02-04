@@ -1,6 +1,8 @@
 require "ethereum/version"
-require 'active_support'
-require 'active_support/core_ext'
+if ENV["NO_ACTIVESUPPORT"] == "1"
+  require 'active_support'
+  require 'active_support/core_ext'
+end
 require 'digest/sha3'
 
 module Ethereum
